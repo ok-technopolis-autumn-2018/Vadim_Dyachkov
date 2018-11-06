@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="todo-app">
+        <div class="todo-title">todos</div>
+        <div class="todo-header">
+            <button class="todo-header_all-done"></button>
+            <input type="text" class="todo-header_input" placeholder="What needs to be done?"/>
+        </div>
+        <div class="todo-list">
+            <div class="todo-item">
+                <input type="checkbox" class="todo-item_checkbox" name="done" value="done" checked/>
+                <input type="text" class="todo-item_text" value="HTML"/>
+                <button class="todo-item_clear"></button>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" class="todo-item_checkbox" name="done" value="done"/>
+                <input type="text" class="todo-item_text" value="CSS"/>
+                <button class="todo-item_clear"></button>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" class="todo-item_checkbox" name="done" value="done"/>
+                <input type="text" class="todo-item_text" value="JS"/>
+                <button class="todo-item_clear"></button>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" class="todo-item_checkbox" name="done" value="done"/>
+                <input type="text" class="todo-item_text" value="JS tools"/>
+                <button class="todo-item_clear"></button>
+            </div>
+        </div>
+        <div class="todo-footer">
+            <div class="todo-footer_items-left">
+                3 items left
+            </div>
+            <div class="todo-footer_filters">
+                <button class="todo-footer_filter __selected">
+                    All
+                </button>
+                <button class="todo-footer_filter">
+                    Active
+                </button>
+                <button class="todo-footer_filter">
+                    Completed
+                </button>
+            </div>
+            <button class="todo-footer_clear-completed">
+                Clear completed
+            </button>
+        </div>
+    </div>
+</body>
+</html>
