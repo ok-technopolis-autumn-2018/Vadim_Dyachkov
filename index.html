@@ -6,49 +6,79 @@
 </head>
 <body>
     <div class="todo-app">
-        <div class="todo-title">todos</div>
-        <div class="todo-header">
-            <button class="todo-header_all-done"></button>
-            <input type="text" class="todo-header_input" placeholder="What needs to be done?"/>
+        <div class="todos-header">
+            <h1 class="todo-title">todos</h1>
+        </div>
+        <div class="todos-add">
+            <button class="todos-add_all-done"
+                    aria-label="Check all as done">
+            </button>
+            <input class="todos-add_input" type="text" placeholder="What needs to be done?"
+                   aria-label="Add todo"/>
         </div>
         <div class="todo-list">
-            <div class="todo-item">
-                <input type="checkbox" class="todo-item_checkbox" name="done" value="done" checked/>
-                <input type="text" class="todo-item_text" value="HTML"/>
-                <button class="todo-item_clear"></button>
+            <div class="todo-item __done">
+                <input class="todo-item_checkbox" type="checkbox" checked
+                       aria-label="Check as done"/>
+                <textarea class="todo-item_text">
+                    HTML
+                </textarea>
+                <button class="todo-item_clear"
+                        aria-label="Remove todo">
+                </button>
             </div>
             <div class="todo-item">
-                <input type="checkbox" class="todo-item_checkbox" name="done" value="done"/>
-                <input type="text" class="todo-item_text" value="CSS"/>
-                <button class="todo-item_clear"></button>
+                <input class="todo-item_checkbox" type="checkbox"
+                       aria-label="Check as done"/>
+                <textarea class="todo-item_text">
+                    CSS
+                </textarea>
+                <button class="todo-item_clear"
+                        aria-label="Remove todo">
+                </button>
             </div>
             <div class="todo-item">
-                <input type="checkbox" class="todo-item_checkbox" name="done" value="done"/>
-                <input type="text" class="todo-item_text" value="JS"/>
-                <button class="todo-item_clear"></button>
+                <input class="todo-item_checkbox" type="checkbox"
+                       aria-label="Check as done"/>
+                <textarea class="todo-item_text">
+                    JS
+                </textarea>
+                <button class="todo-item_clear"
+                        aria-label="Remove todo">
+                </button>
             </div>
             <div class="todo-item">
-                <input type="checkbox" class="todo-item_checkbox" name="done" value="done"/>
-                <input type="text" class="todo-item_text" value="JS tools"/>
-                <button class="todo-item_clear"></button>
+                <input class="todo-item_checkbox" type="checkbox"
+                       aria-label="Check as done"/>
+                <textarea class="todo-item_text">
+                    JS tools
+                </textarea>
+                <button class="todo-item_clear"
+                        aria-label="Remove todo">
+                </button>
             </div>
         </div>
-        <div class="todo-footer">
-            <div class="todo-footer_items-left">
+        <div class="todos-footer">
+            <div class="todos-footer_counter"
+                 aria-label="Active todos counter">
                 3 items left
             </div>
-            <div class="todo-footer_filters">
-                <button class="todo-footer_filter __selected">
+            <div class="todos-footer_filters">
+                <button class="todos-footer_filter __active"
+                        aria-label="Show all">
                     All
                 </button>
-                <button class="todo-footer_filter">
+                <button class="todos-footer_filter"
+                        aria-label="Show active">
                     Active
                 </button>
-                <button class="todo-footer_filter">
+                <button class="todos-footer_filter"
+                        aria-label="Show completed">
                     Completed
                 </button>
             </div>
-            <button class="todo-footer_clear-completed">
+            <button class="todos-footer_clear-completed"
+                    aria-label="Clear completed">
                 Clear completed
             </button>
         </div>
